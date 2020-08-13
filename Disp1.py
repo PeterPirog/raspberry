@@ -14,7 +14,7 @@ print(text)
 
 while 1:
     #cad.lcd.move_left()
-    time.sleep(0.1)
+    time.sleep(0.2)
     cad.lcd.clear()
     button0 = cad.switches[0].value
     button1=cad.switches[1].value
