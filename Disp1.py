@@ -14,15 +14,17 @@ print(text)
 
 while 1:
     #cad.lcd.move_left()
-    time.sleep(0.2)
-
+    time.sleep(0.1)
+    cad.lcd.clear()
     button0 = cad.switches[0].value
     button1=cad.switches[1].value
     button2 = cad.switches[2].value
     button3 = cad.switches[3].value
     button4 = cad.switches[4].value
+    full_text=button0,button1,button2,button3,button4
+    cad.lcd.write(str(full_text))
 
-    print(button0,button1,button2,button3,button4)
+    print(full_text)
     pass
 """ CURSOR CONTROL
 cad.lcd.set_cursor(4, 1)  # set the cursor to col 4 on the second row
