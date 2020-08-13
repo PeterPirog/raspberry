@@ -4,7 +4,7 @@ import pifacecad
 import time
 cad = pifacecad.PiFaceCAD()    # create PiFace Control and Display object
 cad.lcd.backlight_on()         # turns the backlight on
-cad.lcd.write("Dzien Dobry Ilonko") # writes hello world on to the LCD
+cad.lcd.write("Hello world") # writes hello world on to the LCD
 while 1:
     cad.lcd.move_right()
     time.sleep(0.2)
