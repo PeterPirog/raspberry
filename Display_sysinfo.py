@@ -17,6 +17,7 @@ memory_symbol = pifacecad.LCDBitmap(
     [0xe, 0x1f, 0xe, 0x1f, 0xe, 0x1f, 0xe, 0x0])
 temp_symbol_index, memory_symbol_index = 0, 1
 
+#####
 
 def run_cmd(cmd):
     return subprocess.check_output(cmd, shell=True).decode('utf-8')
